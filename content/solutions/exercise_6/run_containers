@@ -1,0 +1,10 @@
+docker run \
+-it \
+-p 3000:3000 \
+-e BACKEND_URL=$(gp url 8080) \
+frontend
+
+docker run \
+-p 8080:8080 \
+-e REQUEST_ORIGIN=$(gp url 3000) \
+backend
