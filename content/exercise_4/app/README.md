@@ -1,11 +1,15 @@
-# Uber Pickups in New York City
-A [Streamlit](https://streamlit.io) demo [written in pure Python](https://github.com/streamlit/demo-uber-nyc-pickups/blob/master/streamlit_app.py) to interactively visualize Uber pickups in New York City. See it running live by clicking the badge below:
+# Activation Function Demonstration App
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/streamlit/demo-uber-nyc-pickups/)
+A [Streamlit](https://streamlit.io) application to interactively visualize typical neural network activation functions
+in an interactive environment. See it running live by clicking the badge below:
 
-Note that installing Streamlit and running an application designed for the framework require to have Python >=3.7 in the system. By default, Streamlit runs on port `8501`.
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/ammaryh92/activation_functions/main/app.py)
+
+Note that installing Streamlit and running an application designed for the framework requires to have 
+Python >=3.7 in the system. By default, Streamlit runs on port `8501`.
 
 ## Run this demo locally
+
 ```
 pip install --upgrade pip
 pip install -r requirements.txt

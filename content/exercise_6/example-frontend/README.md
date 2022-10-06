@@ -1,14 +1,12 @@
 # example-frontend
 
-This project is created to help learn docker configurations for frontend projects. The README starting from "Prerequisites" is written without Docker in mind so student has to figure out how to construct their configuration based on the README. However, there are some additional helpers added in the README and in the exercise description.
-
-> Notice, that all the information are not needed in all the exercises. Don't just copypaste.
+This is a simple frontend in `nodejs` calling a simple backend.
 
 # Prerequisites
 
 Install [node](https://nodejs.org/en/download/). 
 
-Example node install instructions for LTS node 14.x:
+Example node installation instructions for LTS node 14.x:
 ```
 curl -sL https://deb.nodesource.com/setup_14.x | bash
 sudo apt install -y nodejs
@@ -25,13 +23,13 @@ npm install && npm install -g serve
 
 ## How to run the project
 
-Once the `npm` dependencies installed, you can run the project with:
+Once the `npm` dependencies are installed, you can run the project with:
 ```
 ./start.sh
 ```
-
-This entrypoint script takes care of passing the following environment variables to the React application:
-* `BACKEND_URL`: defines at which URL the frontend will try to reach the backend (default is `http://localhost:5000`).
-
-The server will run on port 3000 by default.
+The server will run on port 3000.
 Test that the project is running by going to `http://localhost:3000`
+
+This application can leverage the following environment variables:
+
+* `BACKEND_URL`: defines at which URL the frontend will try to reach the backend (default is `http://localhost:5000`).

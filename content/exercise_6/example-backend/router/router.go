@@ -42,7 +42,7 @@ func pingpong(context *gin.Context) {
 
 // Router is the gin server router
 func Router() *gin.Engine {
-	allowedOrigin := common.FallbackString(os.Getenv("REQUEST_ORIGIN"), "https://example.com")
+	allowedOrigin := common.FallbackString(os.Getenv("REQUEST_ORIGIN"), "*")
 
 	cacheErr := cache.InitializeRedisClient()
 	if cacheErr != nil {

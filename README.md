@@ -5,7 +5,7 @@
 
 This repository is hosting the exercises provided to students in the context of the `Containerization with Docker` course of the Data Minded Academy.
 
-## 1. The exercises in details
+## 1. The exercises in detail
 
 The following exercises are part of the repository:
 
@@ -16,7 +16,7 @@ The following exercises are part of the repository:
 * **Exercise 5** (`exercise_5`) - Write the Dockerfile of a simple Spring (Java) application
 * **Exercise 6** (`exercise_6`) - Run a frontend-backend stack
 * **Exercise 7** (`exercise_7`) - Deploy the Streamlit app to Heroku
-* **Exercise 8** (`exercise_8`) - CICD pipeline with Github Actions and deployment to Heroku
+* **Exercise 8** (`exercise_8`) - CICD pipeline with GitHub Actions and deployment to Heroku
 
 ## 2. How-to run
 
@@ -32,7 +32,7 @@ This exercise workshop can be run directly on Gitpod (without any need to provis
 |            | Path in Docker image |
 |------------|---------------|
 | Exercise 1 | `No solution required` |
-| Exercise 2 | `No solution required` |
+| Exercise 2 | `/bin/dataminded` |
 | Exercise 3 | `/bin/acme` |
 | Exercise 4 | `/bin/blizzard` |
 | Exercise 5 | `/bin/piper`|

@@ -26,6 +26,8 @@ RUN mkdir /bin/abstergo && \
     mkdir /bin/blizzard && \
     mkdir /bin/acme && \
     mkdir /bin/glados && \
+    mkdir /bin/dataminded && \
+    mv /home/gitpod/docker-exercises/solutions/exercise_2 /bin/dataminded && \
     mv /home/gitpod/docker-exercises/solutions/exercise_3 /bin/acme && \
     mv /home/gitpod/docker-exercises/solutions/exercise_4 /bin/blizzard && \
     mv /home/gitpod/docker-exercises/solutions/exercise_5 /bin/piper && \
