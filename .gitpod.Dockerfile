@@ -30,7 +30,7 @@ RUN mkdir /bin/abstergo && \
     mv /home/gitpod/docker-exercises/solutions/exercise_4 /bin/blizzard && \
     mv /home/gitpod/docker-exercises/solutions/exercise_5 /bin/piper && \
     mv /home/gitpod/docker-exercises/solutions/exercise_6 /bin/abstergo && \
-    mv /home/gitpod/docker-exercises/solutions/exercise_8 /bin/glados && \
+    mv /home/gitpod/docker-exercises/solutions/exercise_7 /bin/glados && \
     rm -rf /home/gitpod/docker-exercises/solutions
 
 USER gitpod

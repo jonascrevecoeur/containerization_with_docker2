@@ -15,8 +15,7 @@ The following exercises are part of the repository:
 * **Exercise 4** (`exercise_4`) - Write the Dockerfile of a simple Python application (Streamlit)
 * **Exercise 5** (`exercise_5`) - Write the Dockerfile of a simple Spring (Java) application
 * **Exercise 6** (`exercise_6`) - Run a frontend-backend stack
-* **Exercise 7** (`exercise_7`) - Deploy the Streamlit app to Heroku
-* **Exercise 8** (`exercise_8`) - CICD pipeline with GitHub Actions and deployment to Heroku
+* **Exercise 7** (`exercise_7`) - CICD pipeline with GitHub Actions and publish to GitHub image registry
 
 ## 2. How-to run
 
@@ -37,5 +36,4 @@ This exercise workshop can be run directly on Gitpod (without any need to provis
 | Exercise 4 | `/bin/blizzard` |
 | Exercise 5 | `/bin/piper`|
 | Exercise 6 | `/bin/abstergo` |
-| Exercise 7 | `No solution required` |
-| Exercise 8 | `/bin/glados` |
+| Exercise 7 | `/bin/glados` |
