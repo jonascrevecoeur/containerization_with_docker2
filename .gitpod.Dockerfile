@@ -11,9 +11,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/cache/apt/* && \
     rm -rf /var/lib/apt/lists/* && \
-    rm -rf /tmp/* && \
-    brew tap heroku/brew && \
-    brew install heroku
+    rm -rf /tmp/*
 
 # Copy exercices content into the image
 COPY --chown=gitpod content/ /home/gitpod/docker-exercises
