@@ -75,7 +75,7 @@ to do the following steps:
     * Build the Docker image with the registry name in it:
         ```
         git_hash=$(git rev-parse --short HEAD)
-        docker build . -t docker.pkg.github.com/<your username>/<your repositoru name>/project-api:$git_hash
+        docker build . -t ghcr.io/<your username>/<your repositoru name>/project-api:$git_hash
         ```
     * Retest your image like above. You want to retest in CD because you can never be sure
       that the result of your merge to main doesn't result in a broken state.
@@ -83,8 +83,8 @@ to do the following steps:
     * Login and push the Docker image to Github Packages:
       ```
       git_hash=$(git rev-parse --short HEAD)
-      docker login https://docker.pkg.github.com --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }}
-      docker push docker.pkg.github.com/<your username>/<your repositoru name>/project-api:$git_hash
+      docker login https://ghcr.io --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }}
+      docker push ghcr.io/<your username>/<your repositoru name>/project-api:$git_hash
       ```
     
 11. Create a pull request to merge your changes. Once green at the PR-level, merge it to main. Once done, 
