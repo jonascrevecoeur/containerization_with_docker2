@@ -41,12 +41,12 @@ been triggered in the `Actions` panel. You just pushed to master directly so it'
 what this pipeline is doing (spoiler: it's useless). Find the code defining those actions in the `.github` folder of your repository.
 
 5. As you may know, pushing to `main` directly is evil and chaotic, so head to your GitHub repository 
-Settings > Branches > Branch protection rules > Add rule` and create a rule with the following information:
+`Settings > Branches > Branch protection rules > Add rule` and create a rule with the following information:
 
     * Branch name pattern: `main`
     * Require a pull request before merging: `Ticked`
     * Untick the `Require approvals` field 
-    * Include administrators: `Ticked`
+    * Do not allow bypassing the above setting: `Ticked`
 
 6. Modify the file `.github/pr-pipeline.yml` (that defines the PR pipeline, you got it) to do the following steps:
 
@@ -75,7 +75,7 @@ to do the following steps:
     * Build the Docker image with the registry name in it:
         ```
         git_hash=$(git rev-parse --short HEAD)
-        docker build . -t docker.pkg.github.com/<your username>/<your repositoru name>/project-api:$git_hash
+        docker build . -t ghcr.io/<your username>/<your repository name>/project-api:$git_hash
         ```
     * Retest your image like above. You want to retest in CD because you can never be sure
       that the result of your merge to main doesn't result in a broken state.
@@ -83,8 +83,8 @@ to do the following steps:
     * Login and push the Docker image to Github Packages:
       ```
       git_hash=$(git rev-parse --short HEAD)
-      docker login https://docker.pkg.github.com --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }}
-      docker push docker.pkg.github.com/<your username>/<your repositoru name>/project-api:$git_hash
+      docker login https://ghcr.io --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }}
+      docker push ghcr.io/<your username>/<your repository name>/project-api:$git_hash
       ```
     
 11. Create a pull request to merge your changes. Once green at the PR-level, merge it to main. Once done, 
