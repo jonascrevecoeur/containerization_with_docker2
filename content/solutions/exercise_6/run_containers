@@ -1,0 +1,9 @@
+docker run \
+-it \
+-p 3000:3000 \
+-e BACKEND_URL=$(gp url 8080) \
+frontend
+
+docker run \
+-p 8080:8080 \
+backend

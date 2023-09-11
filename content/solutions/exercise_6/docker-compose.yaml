@@ -1,0 +1,15 @@
+# Run with : FRONTEND_URL=$(gp url 3000) BACKEND_URL=$(gp url 8080) docker-compose up
+version: "3.9"
+services:
+  frontend:
+    image: frontend:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - BACKEND_URL=${BACKEND_URL}
+    restart: always
+  backend:
+    image: backend:latest
+    ports:
+      - "8080:8080"
+    restart: always
