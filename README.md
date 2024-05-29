@@ -1,7 +1,7 @@
 # Data Minded Academy - Containerization with Docker
 ## Exercises Repository
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/jonascrevecoeur/containerization_with_docker)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/jonascrevecoeur/containerization_with_docker2)
 
 This repository is hosting the exercises provided to students in the context of the `Containerization with Docker` course of the Data Minded Academy.
 
@@ -21,7 +21,7 @@ The following exercises are part of the repository:
 
 This exercise workshop can be run directly on Gitpod (without any need to provision VM or anything). You just need to click the button below.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/datamindedacademy/containerization_with_docker)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/jonascrevecoeur/containerization_with_docker2)
 
 
 ## 3. Notes
