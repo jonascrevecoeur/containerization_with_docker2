@@ -1,7 +1,7 @@
 # Data Minded Academy - Containerization with Docker
 ## Exercises Repository
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/datamindedacademy/containerization_with_docker)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/jonascrevecoeur/containerization_with_docker)
 
 This repository is hosting the exercises provided to students in the context of the `Containerization with Docker` course of the Data Minded Academy.
 
@@ -28,12 +28,12 @@ This exercise workshop can be run directly on Gitpod (without any need to provis
 
 * All the exercises solutions are in `content/solutions` and are hidden in the Lab environment at the following paths:
 
-|            | Path in Docker image |
-|------------|---------------|
+|            | Path in Docker image   |
+| ---------- | ---------------------- |
 | Exercise 1 | `No solution required` |
-| Exercise 2 | `/bin/dataminded` |
-| Exercise 3 | `/bin/acme` |
-| Exercise 4 | `/bin/blizzard` |
-| Exercise 5 | `/bin/piper`|
-| Exercise 6 | `/bin/abstergo` |
-| Exercise 7 | `/bin/glados` |
+| Exercise 2 | `/bin/dataminded`      |
+| Exercise 3 | `/bin/acme`            |
+| Exercise 4 | `/bin/blizzard`        |
+| Exercise 5 | `/bin/piper`           |
+| Exercise 6 | `/bin/abstergo`        |
+| Exercise 7 | `/bin/glados`          |
