@@ -1,10 +1,8 @@
-# Run the container
-docker run -d --name easy-container devopsdockeruh/simple-web-service:ubuntu
+# Run the container and expose port 80
+docker run -p 80:80 nginx:1.25.5
 
-# Log into the container with exec
-docker exec -it easy-container /bin/bash
-# Once inside: tail -f /usr/src/app/text.log
+# find the port where the website is running
+gp url 80
 
-# Second method - This doesn't run the internal process generating logs into /usr/src/app/text.log
-# because we overwrote the entrypoint to be /bin/bash instead.
-docker run -it --entrypoint=/bin/bash devopsdockeruh/simple-web-service:ubuntu
+# Mount the content folder 
+docker -v /content:/usr/share/nginx/html:ro -p 80:80 nginx:1.25.5
