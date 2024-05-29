@@ -1,8 +1,15 @@
 # Data Minded Academy - Containerization with Docker
-## Exercise 3 - Use existing Docker images
+## Exercise 3 - Interact with containers
 
-Let's use the [YoutubeDL Docker image](https://hub.docker.com/r/mikenye/youtube-dl) in practice to 
-download [an existing Youtube video](https://www.youtube.com/watch?v=psmZRfiXYnE). Make sure you read 
-the documentation on Dockerhub to understand how to use the image!
+Now that we’ve warmed up it’s time to get inside a container while it’s running! In this exercise, 
+you will have to use the `docker` CLI to interact with running containers.
 
-1. Download the given video using the YoutubeDL Docker image in the following path locally: `/workspace/exercise_3`
+We will use the `devopsdockeruh/simple-web-service:ubuntu` Docker image. Once instantiated as a container,
+this image will outputs logs into a file `text.log`. Go inside the container and use `tail -f /usr/src/app/text.log` to 
+follow the logs. Every 10 seconds the clock will send you a “secret message”.
+
+1. Run a container from the `devopsdockeruh/simple-web-service:ubuntu` image (in detached mode). Set an environment variable `MY-SECRET` to a value of your choice.
+
+2. Go inside the running container (using the right method) and
+   *  read the value of the `MY-SECRET` environment variable
+   *  use `tail -f ./text.log` to follow the logs. Every 10 seconds the clock will send you a “secret message”. What is the secret message? 
