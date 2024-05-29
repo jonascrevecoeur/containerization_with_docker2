@@ -13,3 +13,7 @@ follow the logs. Every 10 seconds the clock will send you a “secret message”
 2. Go inside the running container (using the right method) and
    *  read the value of the `MY-SECRET` environment variable
    *  use `tail -f ./text.log` to follow the logs. Every 10 seconds the clock will send you a “secret message”. What is the secret message? 
+
+3. List all existing containers created so-far (running or stopped). Cleanup by removing all containers.
+   * **Hint**: You can provide multiple ids to `docker container rm` to remove multiple containers
+   * **Hint**: Chain `docker container rm` with a command listing the ids of all containers to remove all of them at once.
